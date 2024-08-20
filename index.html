@@ -10,72 +10,64 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="app">
+    <div id="app">
         <header>
-            <h1>Github Favorites</h1>
-        </header>
-        <div class="search">
+          <h1>Github Favorites</h1>
+          <div class="search">
             <label class="sr-only" for="input-search">Usuário do Github</label>
             <input id="input-search" type="text" placeholder="Usuário do Github">
             <button>&plus;</button>
-        </div>
+          </div>
+        </header>
         <table>
-            <thead>
-                <tr>
-                    <th>Usuário</th>
-                    <th>Repositórios</th>
-                    <th>Seguidores</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                <td class="users">
-                    <img src="https://github.com/artherp.png" alt="">
-                    <a href="https://github.com/artherp" target="_blank">
-                        <p>arthur</p>
-                        <span>artherp</span>
-                    </a>
-                </td>
-                <td class="repositories">
-                    20
-                </td>
-                <td class="followers">
-                    1000
-                </td>
-                <td>
-                    <button>&times;</button>
-                </td>
-            </tbody>
-            <tfoot></tfoot>
-
-            <thead>
-                <tr>
-                    <th>Usuário</th>
-                    <th>Repositórios</th>
-                    <th>Seguidores</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                <td class="users">
-                    <img src="https://github.com/artherp.png" alt="">
-                    <a href="https://github.com/artherp" target="_blank">
-                        <p>arthur</p>
-                        <span>artherp</span>
-                    </a>
-                </td>
-                <td class="repositories">
-                    20
-                </td>
-                <td class="followers">
-                    1000
-                </td>
-                <td>
-                    <button>&times;</button>
-                </td>
-            </tbody>
-            <tfoot></tfoot>
+          <thead>
+            <tr>
+              <th>Usuário</th>
+              <th>Repositórios</th>
+              <th>Seguidores</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="user">
+                <img src="https://github.com/artherp.png" alt="Imagem de artherp">
+                <a href="https://github.com/artherp" target="_blank">
+                  <p>Arthur Erpen</p>
+                  <span>artherp</span>
+                </a>
+              </td>
+              <td class="repositories">
+                76
+              </td>
+              <td class="followers">
+                9589
+              </td>
+              <td>
+                <button class="remove">&times;</button>
+              </td>
+            </tr>
+    
+            <tr>
+              <td class="user">
+                <img src="https://github.com/diego3g.png" alt="Imagem de diego">
+                <a href="https://github.com/diego3g" target="_blank">
+                  <p>Diego Fernandes</p>
+                  <span>diego3g</span>
+                </a>
+              </td>
+              <td class="repositories">
+                48
+              </td>
+              <td class="followers">
+                22503
+              </td>
+              <td>
+                <button class="remove">&times;</button>
+              </td>
+            </tr>
+          </tbody>
         </table>
-    </div>
+      </div>    
 </body>
 </html>
